@@ -1,0 +1,11 @@
+The first test. the application displays the appropriate buttons. Adding works, Removing works, other buttons do nothing.
+
+The second test. After adding print_r() to task_list.php, the app now displays the contents of the main array as indexes with arrows pointing to contents.
+
+After adding  array_push() the ide now displays a warning stating the function only receives one value. The code still works with now visible errors.
+
+Once I passed the right array content to "$task_to_modify" the modify section of the code displays. Save and Cancel buttons have been fixed to allow the values to either be passed along or $task_to_modify to be wiped before the app returns to the previous state.
+
+Sorting was solved by using a simple sort function. Promoting a task just grabs its id and swaps it with a value with id - 1, this does not run if there is only one value inside of the array.
+
+Final test, everything seems to operate the same as the example provided. Found a bug by inputting 0 as a string, but it is also in the example application so I'm leaving it alone.
